@@ -2,6 +2,36 @@
 .intro {
   background: linear-gradient(to top, #e9f5ff, #ffffff), linear-gradient(#3898ec, #3898ec);
 }
+
+.mail {
+	background: linear-gradient(to top, #e9f5ff, #ffffff), linear-gradient(#3898ec, #3898ec);
+
+	.oval-3 {
+	  width: 100px;
+	  height: 100px;
+	  background-color: #ffffff;
+	  border-radius: 50%;
+	  margin-left: auto;
+	  margin-right: auto;
+	  position: relative;
+	}
+	.benefit-title {
+	    letter-spacing: normal;
+	    text-align: center;
+	    color: #333333;
+	    margin: 0;
+	}
+	.benefit-description {
+		letter-spacing: normal;
+		text-align: center;
+		color: #6a7889;
+		margin: 0;
+	}
+	.benefit-wrapper {
+		text-align: center;
+	}
+}
+
 .service {
 
 	.service-image-container {
@@ -122,6 +152,14 @@
 		padding-right: 0;
 	}
 
+	.multi-store-content {
+		display: none;
+
+		.multi-store-image {
+			width: 500px;
+		}
+	}
+
 	.single-store-content {
 		.single-store-image {
 			width: 100%;
@@ -186,39 +224,42 @@
 	  margin-right: auto;
 	  position: relative;
 	  width: 510px;
+  	
+
+  	.bubble {
+		  position: relative;
+		  padding: 5px;
+		  background: #eeeeee;
+		  border-radius: .4em;
+		  text-align: center;
+		  &.selected {
+		  	background: $theme-primary;
+		  	color: white;
+		  	&:after {
+					border-top-color: $theme-primary;
+				}
+		  }
+		}
+
+		.bubble:after {
+		  content: '';
+		  position: absolute;
+		  bottom: 0;
+		  left: 50%;
+		  width: 0;
+		  height: 0;
+		  border: 11px solid transparent;
+		  border-top-color: #eeeeee;
+		  border-bottom: 0;
+		  margin-left: -13px;
+		  margin-bottom: -10px;
+		}
 
 		.tab-single-store {
 		  position: absolute;
 		  top: -74px;
 		  left: 40px;
 		  width: 155px;
-
-			.bubble {
-			  position: relative;
-			  padding: 5px;
-			  background: #3c97e9;
-			  border-radius: .4em;
-
-			  p {
-			  	margin-bottom: 0;
-			  	text-align: center;
-			  	color: white;
-			  }
-			}
-
-			.bubble:after {
-			  content: '';
-			  position: absolute;
-			  bottom: 0;
-			  left: 50%;
-			  width: 0;
-			  height: 0;
-			  border: 11px solid transparent;
-			  border-top-color: #3c97e9;
-			  border-bottom: 0;
-			  margin-left: -13px;
-			  margin-bottom: -10px;
-			}
 		}
 		.tab-chain-store {
 		  position: absolute;
@@ -226,31 +267,6 @@
 		  right: 15px;
 		  width: 200px;
 
-		  .bubble {
-			  position: relative;
-			  padding: 5px;
-			  background: #eeeeee;
-			  border-radius: .4em;
-
-			  p {
-			  	margin-bottom: 0;
-			  	text-align: center;
-			  }
-			}
-
-			.bubble:after {
-			  content: '';
-			  position: absolute;
-			  bottom: 0;
-			  left: 50%;
-			  width: 0;
-			  height: 0;
-			  border: 11px solid transparent;
-			  border-top-color: #eeeeee;
-			  border-bottom: 0;
-			  margin-left: -13px;
-			  margin-bottom: -10px;
-			}
 		}
 		.line {
 		  height: 1px;

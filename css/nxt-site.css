@@ -44,7 +44,7 @@ h6 {
 p {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 0 !important;
 }
 
 section {
@@ -206,32 +206,62 @@ header.masthead .play-wrapper {
 }
 
 footer {
-  padding: 25px 0;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #222222;
+  background-color: #022336;
 }
 
-footer p {
-  font-size: 12px;
-  margin: 0;
+footer .footer-left-container {
+  display: flex;
 }
 
-footer ul {
-  margin-bottom: 0;
+footer .footer-left-container .footer-item-container {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7%;
 }
 
-footer ul li a {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.3);
+footer .footer-left-container .footer-item-container .footer-item-title {
+  color: white;
 }
 
-footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
-  text-decoration: none;
+footer .footer-left-container .footer-item-container .footer-item {
+  color: white;
 }
 
 .intro {
   background: linear-gradient(to top, #e9f5ff, #ffffff), linear-gradient(#3898ec, #3898ec);
+}
+
+.mail {
+  background: linear-gradient(to top, #e9f5ff, #ffffff), linear-gradient(#3898ec, #3898ec);
+}
+
+.mail .oval-3 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.mail .benefit-title {
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+
+.mail .benefit-description {
+  letter-spacing: normal;
+  text-align: center;
+  color: #6a7889;
+  margin: 0;
+}
+
+.mail .benefit-wrapper {
+  text-align: center;
 }
 
 .service .service-image-container .service-image {
@@ -347,6 +377,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   padding-right: 0;
 }
 
+.features-chain-store .multi-store-content {
+  display: none;
+}
+
+.features-chain-store .multi-store-content .multi-store-image {
+  width: 500px;
+}
+
 .features-chain-store .single-store-content .single-store-image {
   width: 100%;
 }
@@ -411,60 +449,24 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   }
 }
 
-.features-chain-store .chain-store-image-wrapper .tab-single-store {
-  position: absolute;
-  top: -74px;
-  left: 40px;
-  width: 155px;
-}
-
-.features-chain-store .chain-store-image-wrapper .tab-single-store .bubble {
-  position: relative;
-  padding: 5px;
-  background: #3c97e9;
-  border-radius: .4em;
-}
-
-.features-chain-store .chain-store-image-wrapper .tab-single-store .bubble p {
-  margin-bottom: 0;
-  text-align: center;
-  color: white;
-}
-
-.features-chain-store .chain-store-image-wrapper .tab-single-store .bubble:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 11px solid transparent;
-  border-top-color: #3c97e9;
-  border-bottom: 0;
-  margin-left: -13px;
-  margin-bottom: -10px;
-}
-
-.features-chain-store .chain-store-image-wrapper .tab-chain-store {
-  position: absolute;
-  top: -74px;
-  right: 15px;
-  width: 200px;
-}
-
-.features-chain-store .chain-store-image-wrapper .tab-chain-store .bubble {
+.features-chain-store .chain-store-image-wrapper .bubble {
   position: relative;
   padding: 5px;
   background: #eeeeee;
   border-radius: .4em;
-}
-
-.features-chain-store .chain-store-image-wrapper .tab-chain-store .bubble p {
-  margin-bottom: 0;
   text-align: center;
 }
 
-.features-chain-store .chain-store-image-wrapper .tab-chain-store .bubble:after {
+.features-chain-store .chain-store-image-wrapper .bubble.selected {
+  background: #3C97E9;
+  color: white;
+}
+
+.features-chain-store .chain-store-image-wrapper .bubble.selected:after {
+  border-top-color: #3C97E9;
+}
+
+.features-chain-store .chain-store-image-wrapper .bubble:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -476,6 +478,20 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border-bottom: 0;
   margin-left: -13px;
   margin-bottom: -10px;
+}
+
+.features-chain-store .chain-store-image-wrapper .tab-single-store {
+  position: absolute;
+  top: -74px;
+  left: 40px;
+  width: 155px;
+}
+
+.features-chain-store .chain-store-image-wrapper .tab-chain-store {
+  position: absolute;
+  top: -74px;
+  right: 15px;
+  width: 200px;
 }
 
 .features-chain-store .chain-store-image-wrapper .line {

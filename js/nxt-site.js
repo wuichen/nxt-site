@@ -20,6 +20,28 @@
     $('.navbar-collapse').collapse('hide');
   });
 
+  $('.bubble').click(function() {
+    $('.bubble.selected').removeClass('selected')
+    $(this).addClass('selected')
+    if (this.id === 'single_store') {
+
+      $('.multi-store-content').fadeOut(1000, function() {
+        $('.single-store-content').fadeIn(1000)
+      })
+
+    } else {
+      $('.single-store-content').fadeOut(1000, function() {
+        $('.multi-store-content').fadeIn(1000)
+      })
+    }
+  });
+
+
+  $('.multi_store').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',

@@ -20,12 +20,9 @@
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
     <!-- Custom styles for this template -->
     <link href="css/nxt-site.css" rel="stylesheet">
-
+    
   </head>
 
   <body id="page-top">
@@ -127,12 +124,12 @@
           <div class="oval-copy"></div>
           </div>
           <div class="tab-single-store">
-            <div class="bubble">
+            <div class="bubble selected" id="single_store">
               <p>第一家店</p>
             </div>
           </div>
           <div class="tab-chain-store">
-            <div class="bubble">
+            <div class="bubble" id="multi_store">
               <p>多家店：連鎖經營</p>
             </div>
           </div>
@@ -140,6 +137,20 @@
         <div class="title-wrapper">
           <h2 class="title">店家：連鎖經營</h2>
           <p class="title-desc">從小而大是每位經營者的夢想，但您的系統可以陪您一起成長嗎？</p>
+        </div>
+
+        <div class="multi-store-content">
+          <div class="multi_store">
+            <div>
+              <img class="multi-store-image" src="img/staffs-time-card/staffs-time-card.jpg" />
+            </div>
+            <div>
+              <img class="multi-store-image" src="img/report-overview-today/report-overview-today.jpg" />
+            </div>
+            <div>
+              <img class="multi-store-image" src="img/product-product-info/product-product-info.jpg" />
+            </div>
+          </div>      
         </div>
 
         <div class="single-store-content">
@@ -208,7 +219,7 @@
 
           <div class="col-md-5 col-xs-12">
             <div class="reservation-desc">
-              <p className="benifit-layer">我們的預約可以給您的顧客帶來更多選擇，<b>減低錯誤的發生率</b>，增加<b>增加方便性</b>，更可以提高店家的曝光率。</p>
+              <p class="benifit-layer">我們的預約可以給您的顧客帶來更多選擇，<b>減低錯誤的發生率</b>，增加<b>增加方便性</b>，更可以提高店家的曝光率。</p>
               <a href="#">看更多介紹 > </a>
             </div>
 
@@ -230,7 +241,7 @@
         <div class="row">
           <div class="col-md-5 col-xs-12">
             <div class="service-desc">
-              <p className="benifit-layer">記錄下每一次的服務和喜好，提供給顧客更完善的服務，讓來過的都成為您忠實的顧客。</p>
+              <p class="benifit-layer">記錄下每一次的服務和喜好，提供給顧客更完善的服務，讓來過的都成為您忠實的顧客。</p>
               <a href="#">看更多介紹 > </a>
             </div>
 
@@ -248,45 +259,102 @@
     </section>
 
 
-    <section class="contact bg-primary" id="contact">
-      <div class="container">
-        <h2>We
-          <i class="fa fa-heart"></i>
-          new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="#">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        </ul>
+    <section class="mail">
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <div class="benefit-wrapper">
+            <div class="oval-3">
+              <img src="img/icon-saving/icon-saving.svg"/>
+            </div>
+            <p class="benefit-title">免費入會</p>
+            <p class="benefit-description">不花一毛錢</p>
+            <p class="benefit-description">輕鬆經營店務無負擔</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+          <div class="benefit-wrapper">
+            <div class="oval-3">
+              <img src="img/icon-setting/icon-setting.svg"/>
+            </div>
+            <p class="benefit-title">功能更新</p>
+            <p class="benefit-description">因應市場開發新功能</p>
+            <p class="benefit-description">終生會員制</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="benefit-wrapper">
+            <div class="oval-3">
+              <img src="img/icon-sale/icon-sale.svg" />
+            </div>
+            <p class="benefit-title">幫助銷售</p>
+            <p class="benefit-description">串連各社群平台</p>
+            <p class="benefit-description">增加網路曝光度</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <img src="img/ipad-screenshot/ipad-screenshot.png" style={style.ipadScreenshot} />
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <p>免費一按！好店輕鬆管</p>
+          <p>即將上市，現在填寫電子郵件即可第一時間享有免費NxtPOS!</p>
+          <div>
+            <input class='input'
+              placeholder="輸入您的電子郵件" />
+            <a>加入通知名單</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer>
-      <div class="container">
-        <p>&copy; Your Website 2018. All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="footer-left-container">
+              <div class="footer-item-container">
+                <p class="footer-item-title">NxtPOS</p>
+                <p class="footer-item">美髮零售業</p>
+                <p class="footer-item">價格方案</p>
+                <p class="footer-item">下載APP</p>
+              </div>
+              <div class="footer-item-container">
+                <p class="footer-item-title">幫助中心</p>
+                <p class="footer-item">常見問題</p>
+                <p class="footer-item">討論區</p>
+              </div>
+              <div class="footer-item-container">
+                <p class="footer-item-title">公司 </p>
+                <p class="footer-item">關於我們</p>
+                <p class="footer-item">人才招募</p>
+                <p class="footer-item">聯絡我們</p>
+                <p class="footer-item">部落格</p>
+              </div>
+              <div class="footer-item-container">
+                <p class="footer-item-title">合作聯繫</p>
+                <p class="footer-item">成為經銷商</p>
+                <p class="footer-item">成為夥伴</p>
+                <p class="footer-item">企業合作</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <div class="language-choose">
+              <p class="language-selected">中文(繁體)</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            <span class="nxtpos-all-rights">© 2018 NxtPOS All rights reserved. </span>
+            <span class="nxtpost-term-conditions">隱私條款 | 服務條款</span>
+            <span class="nxtpost-contact">專人服務，請撥打 +886987654321</span>
+          </p>
+        </div>
       </div>
     </footer>
 
