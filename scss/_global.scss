@@ -39,9 +39,61 @@ h6 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 0 !important;
+}
+
+.text-xs {
+    font-size: 16px;
+}
+
+.text-sm {
+    font-size: 20px;
+}
+
+.text-md {
+    font-size: 32px;
+}
+
+.text-lg {
+    font-size: 40px;
+}
+
+.text-xl {
+    font-size: 50px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.blue {
+    color: #3898ec;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.grey {
+    color: #6a7889;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 section {

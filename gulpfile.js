@@ -106,15 +106,6 @@ gulp.task('js:minify', function() {
 
 });
 
-
-// gulp.task('minify-js', function() {
-//     return gulp.src('./public/**/*.js')
-//       .pipe(uglify())
-//     .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); }) //增加这一行
-//       .pipe(gulp.dest('./public'));
-    
-// });
-
 // JS
 gulp.task('js', ['js:minify']);
 

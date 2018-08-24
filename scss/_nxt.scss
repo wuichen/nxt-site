@@ -4,7 +4,7 @@
 }
 
 .mail {
-	background: linear-gradient(to top, #e9f5ff, #ffffff), linear-gradient(#3898ec, #3898ec);
+	background: linear-gradient(187deg, #e1f5ff, #f5faff 48%, #69b9ff);
 
 	.oval-3 {
 	  width: 100px;
@@ -18,13 +18,11 @@
 	.benefit-title {
 	    letter-spacing: normal;
 	    text-align: center;
-	    color: #333333;
 	    margin: 0;
 	}
 	.benefit-description {
 		letter-spacing: normal;
 		text-align: center;
-		color: #6a7889;
 		margin: 0;
 	}
 	.benefit-wrapper {
@@ -47,7 +45,6 @@
 	.service-desc {
 		margin-top: 20%;
 		padding: 30px;
-		color: grey;
 	}
 
 	.service-title-wrapper {
@@ -55,44 +52,31 @@
 	  margin-top: 60px;
 	  padding: 30px;
 	  .service-title {
-		  font-size: 40px;
-		  font-weight: 500;
-		  font-style: normal;
-		  font-stretch: normal;
-		  font-weight: bold;
-		  line-height: 1.12;
-		  letter-spacing: normal;
 		  text-align: center;
-		  color: #333333;
 		  margin: auto;
 		  margin-bottom: 20px;
 		}
 
 		.service-text {
-		  font-size: 16px;
-		  font-weight: normal;
 		  font-style: normal;
 		  font-stretch: normal;
 		  line-height: 1.5;
 		  letter-spacing: normal;
 		  text-align: center;
-		  color: #6a7889;
 		  margin: auto;
 		}
 	}
 }
-.reservation {
-  background: linear-gradient(to top, #e9f5ff, #ffffff), linear-gradient(#3898ec, #3898ec);
 
-	.container-fluid {
-		padding-left: 0;
-		padding-right: 0;
-	}
+.reservation {
+	background: url(../img/bg-reservation/bg-reservation.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 
 	.reservation-desc {
 		margin-top: 20%;
 		padding: 30px;
-		color: grey;
 	}
 
 	.reservation-bottom-desc {
@@ -105,28 +89,13 @@
 	  margin-top: 60px;
 	  padding: 30px;
 	  .reservation-title {
-		  font-size: 40px;
-		  font-weight: 500;
-		  font-style: normal;
-		  font-stretch: normal;
-		  font-weight: bold;
-		  line-height: 1.12;
-		  letter-spacing: normal;
 		  text-align: center;
-		  color: #333333;
 		  margin: auto;
 		  margin-bottom: 20px;
 		}
 
 		.reservation-text {
-		  font-size: 16px;
-		  font-weight: normal;
-		  font-style: normal;
-		  font-stretch: normal;
-		  line-height: 1.5;
-		  letter-spacing: normal;
 		  text-align: center;
-		  color: #6a7889;
 		  margin: auto;
 		}
 	}
@@ -144,38 +113,49 @@
 }
 
 .features-chain-store {
-	.bg-run-business {
-		width: 100%;
-	}
 	.container-fluid {
 		padding-left: 0;
-		padding-right: 0;
+		margin-left: 0;
+	}
+	background: url(../img/bg-run-business/bg-run-business.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin-top: 100px;
+	.bg-run-business {
+		width: 100%;
 	}
 
 	.multi-store-content {
 		display: none;
 		.multi-store-container {
-		  width: 40em;
+		  width: 640px;
 		  height: 25em;
 		  margin: 0 auto;
 		  position: relative;
+		  @media (max-width: 600px) {
+				width: 400px;
+			}
 		}
 
 		li {
 		  width: 500px;
-		  height: 281px;
 		  background: #333;
 		  display: inline-block;
 		  -webkit-transition: all .3s ease-in-out;
 		  -moz-transition: all .3s ease-in-out;
 		  transition: all .3s ease-in-out;
 		  overflow: hidden;
+		  img {
+		  	width: 100%;
+		  }
+		  @media (max-width: 600px) {
+				width: 300px;
+			}
 		}
 
 		li p {
 		  color: white;
-		  font-weight: bold;
-		  font-size: 5em;
 		  text-align: center;
 		  margin-top: 1.175em;
 		}
@@ -238,14 +218,10 @@
 
 	.single-store-content {
 		.single-store-image {
-			width: 100%;
+			width: 90%;
 		}
 
 		.single-store-info-list {
-			margin-top: 20px;
-			display: flex;
-	    justify-content: space-evenly;
-	    align-items: center;
 			.single-store-icon {
 			  width: 60px;
 			  height: 60px;
@@ -253,37 +229,14 @@
 			  background-image: linear-gradient(to bottom, #69c9f7, #3898ec);
 			  margin: 0;
 			  padding: 12px;
+			  display: inline-block;
 			}
 
-			.word-title {
-			  width: 320px;
-			  font-size: 20px;
-			  font-weight: 600;
-			  font-style: normal;
-			  font-stretch: normal;
-			  line-height: normal;
-			  letter-spacing: normal;
-			  color: #022236;
-			  margin: 0;
-			  margin-top: 10px;
-			}
+			.single-store-desc {
+				display: inline-block;
+				width: 65%;
+				vertical-align: top;
 
-			.word-emphasized {
-			  font-size: 32px;
-			  color: #3898ec;
-			}
-
-			.word-description {
-			  width: 320px;
-			  font-size: 16px;
-			  font-weight: 300;
-			  font-style: normal;
-			  font-stretch: normal;
-			  line-height: 1.5;
-			  letter-spacing: normal;
-			  color: #6a7889;
-			  margin: 0;
-			  padding: 0;
 			}
 		}
 		
