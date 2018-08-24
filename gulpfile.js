@@ -6,6 +6,7 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var gutil = require('gulp-util');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -96,12 +97,23 @@ gulp.task('js:minify', function() {
       '!./js/*.min.js'
     ])
     .pipe(uglify())
+    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); }) //增加这一行
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(gulp.dest('./js'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream());  
+
 });
+
+
+// gulp.task('minify-js', function() {
+//     return gulp.src('./public/**/*.js')
+//       .pipe(uglify())
+//     .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); }) //增加这一行
+//       .pipe(gulp.dest('./public'));
+    
+// });
 
 // JS
 gulp.task('js', ['js:minify']);

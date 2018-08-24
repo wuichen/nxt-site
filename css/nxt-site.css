@@ -381,8 +381,97 @@ footer .footer-left-container .footer-item-container .footer-item {
   display: none;
 }
 
-.features-chain-store .multi-store-content .multi-store-image {
+.features-chain-store .multi-store-content .multi-store-container {
+  width: 40em;
+  height: 25em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.features-chain-store .multi-store-content li {
   width: 500px;
+  height: 281px;
+  background: #333;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+
+.features-chain-store .multi-store-content li p {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 1.175em;
+}
+
+.features-chain-store .multi-store-content .items {
+  position: absolute;
+}
+
+.features-chain-store .multi-store-content .main-pos {
+  margin-left: 2% !important;
+  z-index: 3000;
+  /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+}
+
+.features-chain-store .multi-store-content .left-pos {
+  opacity: .3;
+  margin-left: -40% !important;
+  z-index: 1000;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+}
+
+@media (max-width: 700px) {
+  .features-chain-store .multi-store-content .left-pos {
+    margin-left: -20% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-chain-store .multi-store-content .left-pos {
+    display: none;
+  }
+}
+
+.features-chain-store .multi-store-content .back-pos {
+  margin-left: 2em !important;
+  opacity: .05;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.features-chain-store .multi-store-content .right-pos {
+  opacity: .3;
+  margin-left: 45% !important;
+  z-index: 1000;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+}
+
+@media (max-width: 700px) {
+  .features-chain-store .multi-store-content .right-pos {
+    margin-left: 24% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-chain-store .multi-store-content .right-pos {
+    display: none;
+  }
+}
+
+.features-chain-store .multi-store-content span {
+  position: relative;
+  margin: 0 auto;
+  left: 17em;
+  top: 20em;
 }
 
 .features-chain-store .single-store-content .single-store-image {

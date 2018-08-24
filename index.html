@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>NXTPOS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -140,7 +140,27 @@
         </div>
 
         <div class="multi-store-content">
-          <div class="multi_store">
+          <div class="multi-store-container">
+            <ul class="carousel">
+              <li class="items main-pos" id="1">
+                <img src="img/staffs-time-card/staffs-time-card.jpg" />
+              </li>
+              <li class="items right-pos" id="2">
+                <img src="img/product-product-info/product-product-info.jpg"/>
+              </li>
+<!--               <li class="items back-pos" id="3">
+                <img src="img/report-overview-today/report-overview-today.jpg"/>
+              </li> -->
+              <li class="items left-pos" id="3">
+                <img src="img/report-overview-today/report-overview-today.jpg"/>
+              </li>
+            </ul>
+            <span>
+              <input type="button" value="Prev" id="prev">
+              <input type="button" value="Next" id="next">
+            </span>
+          </div>
+          <!-- <div class="multi_store">
             <div>
               <img class="multi-store-image" src="img/staffs-time-card/staffs-time-card.jpg" />
             </div>
@@ -150,7 +170,7 @@
             <div>
               <img class="multi-store-image" src="img/product-product-info/product-product-info.jpg" />
             </div>
-          </div>      
+          </div>       -->
         </div>
 
         <div class="single-store-content">
@@ -367,6 +387,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/nxt-site.min.js"></script>
+    <script src="js/multi_Store_carousel.min.js"></script>
 
   </body>
 
