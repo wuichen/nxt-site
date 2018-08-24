@@ -83,6 +83,10 @@ p {
   color: #6a7889;
 }
 
+.black {
+  color: black;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -313,37 +317,12 @@ footer .footer-left-container .footer-item-container .footer-item {
   text-align: center;
 }
 
-.service .service-image-container .service-image {
-  margin-top: 10%;
-  margin-left: 10%;
-  float: left;
-  width: 70%;
-}
-
 .service .service-desc {
-  margin-top: 20%;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
-.service .service-title-wrapper {
+.service .service-image {
   width: 100%;
-  margin-top: 60px;
-  padding: 30px;
-}
-
-.service .service-title-wrapper .service-title {
-  text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.service .service-title-wrapper .service-text {
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  margin: auto;
 }
 
 .reservation {
@@ -353,38 +332,12 @@ footer .footer-left-container .footer-item-container .footer-item {
   background-size: cover;
 }
 
-.reservation .reservation-desc {
-  margin-top: 20%;
-  padding: 30px;
-}
-
-.reservation .reservation-bottom-desc {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.reservation .reservation-title-wrapper {
+.reservation .reservation-image {
   width: 100%;
-  margin-top: 60px;
+}
+
+.reservation .reservation-desc {
   padding: 30px;
-}
-
-.reservation .reservation-title-wrapper .reservation-title {
-  text-align: center;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.reservation .reservation-title-wrapper .reservation-text {
-  text-align: center;
-  margin: auto;
-}
-
-.reservation .reservation-image-container .reservation-image {
-  margin-top: 10%;
-  margin-right: 10%;
-  float: right;
-  width: 70%;
 }
 
 .features-chain-store {

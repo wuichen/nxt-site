@@ -31,40 +31,13 @@
 }
 
 .service {
-
-	.service-image-container {
-		
-		.service-image {
-			margin-top: 10%;
-			margin-left: 10%;
-			float: left;
-			width: 70%
-		}
-	}
-
 	.service-desc {
-		margin-top: 20%;
-		padding: 30px;
+		padding: 0 30px 30px 30px;
+
 	}
 
-	.service-title-wrapper {
-	  width: 100%;
-	  margin-top: 60px;
-	  padding: 30px;
-	  .service-title {
-		  text-align: center;
-		  margin: auto;
-		  margin-bottom: 20px;
-		}
-
-		.service-text {
-		  font-style: normal;
-		  font-stretch: normal;
-		  line-height: 1.5;
-		  letter-spacing: normal;
-		  text-align: center;
-		  margin: auto;
-		}
+	.service-image {
+		width: 100%;
 	}
 }
 
@@ -73,42 +46,12 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-
-	.reservation-desc {
-		margin-top: 20%;
-		padding: 30px;
-	}
-
-	.reservation-bottom-desc {
-		margin-top: 40px;
-		text-align: center;
-	}
-
-	.reservation-title-wrapper {
-	  width: 100%;
-	  margin-top: 60px;
-	  padding: 30px;
-	  .reservation-title {
-		  text-align: center;
-		  margin: auto;
-		  margin-bottom: 20px;
-		}
-
-		.reservation-text {
-		  text-align: center;
-		  margin: auto;
-		}
-	}
-
-	.reservation-image-container {
-		
-		.reservation-image {
-			margin-top: 10%;
-			margin-right: 10%;
-			float: right;
-			width: 70%
-		}
-	}
+  .reservation-image {
+  	width: 100%;
+  }
+  .reservation-desc {
+  	padding: 30px;
+  }
 	
 }
 
