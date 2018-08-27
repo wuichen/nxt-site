@@ -1,21 +1,23 @@
-
+$('.carousel').carousel({
+  interval: 2000
+})
 //slideshow style interval
-// var autoSwap = setInterval( swap,3500);
+var autoSwap = setInterval( swap,3500);
 
-// //pause slideshow and reinstantiate on mouseout
-// $('ul, span').hover(
-//   function () {
-//     clearInterval(autoSwap);
-// }, 
-//   function () {
-//    autoSwap = setInterval( swap,3500);
-// });
+//pause slideshow and reinstantiate on mouseout
+$('ul, span').hover(
+  function () {
+    clearInterval(autoSwap);
+}, 
+  function () {
+   autoSwap = setInterval( swap,3500);
+});
 
 //global variables
 var items = [];
 var startItem = 1;
 var position = 0;
-var itemCount = $('.carousel li.items').length;
+var itemCount = $('.custom-carousel li.items').length;
 var leftpos = itemCount;
 var resetCount = itemCount;
 
@@ -26,6 +28,7 @@ $('li.items').each(function(index) {
 
 //swap images function
 function swap(action) {
+  console.log()
   var direction = action;
   
   //moving carousel backwards

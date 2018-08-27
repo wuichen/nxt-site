@@ -58,19 +58,16 @@
               <a class="nav-link">加入體驗名單</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link">功能介紹</a>
+              <a class="nav-link js-scroll-trigger" href="#features-chain-store">功能介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">智能預約</a>
+              <a class="nav-link js-scroll-trigger" href="#reservation">智能預約</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">詳細功能</a>
+              <a class="nav-link js-scroll-trigger" href="#service">顧客經營</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">顧客經營</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">搶先體驗</a>
+              <a class="nav-link js-scroll-trigger" href="#trial">搶先體驗</a>
             </li>
           </ul>
         </div>
@@ -88,7 +85,7 @@
                 顧客預約、店家管理、報表分析，一目了然
               </p>
               <div class="play-wrapper">
-                <img src="img/icon-play/icon-play.png" class="icon-play" />
+                <img src="img/icon-play.png" class="icon-play" />
                 &nbsp;
                 <span class="text-xs">播放《美髮零售業 美好的一天》</span>
               </div>            
@@ -103,7 +100,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-xs-12 mt-3 mb-3">
-            <img src="img/benefit-1/benefit-1.png" class="benefit-img" />
+            <img src="img/benefit-1.png" class="benefit-img" />
             <p class="bold text-sm">省下
               <span class="bold text-md blue"> 50% </span>
               人力與資源
@@ -112,7 +109,7 @@
             <p class="text-xs grey">長、會計、櫃檯、顧問</p>
           </div>
           <div class="col-md-4 col-xs-12 mt-3 mb-3">
-            <img src="img/benefit-2/benefit-2.png" class="benefit-img" />
+            <img src="img/benefit-2.png" class="benefit-img" />
             <p class="bold text-sm">回客率增加
               <span class="bold text-md blue"> 60%</span>
             </p>
@@ -120,7 +117,7 @@
             <p class="text-xs grey">據告訴你：「客人最想要什麼？</p>
           </div>
           <div class="col-md-4 col-xs-12 mt-3 mb-3">
-            <img src="img/benefit-3/benefit-3.png" class="benefit-img" />
+            <img src="img/benefit-3.png" class="benefit-img" />
             <p class="bold text-sm">
               <span class="bold text-md blue">100% </span>
               廣告免錢
@@ -132,8 +129,8 @@
       </div>
     </section>
 
-    <section class="features-chain-store">
-      <div class="container-fluid mb-100">
+    <section class="features-chain-store" id="features-chain-store">
+      <div class="container mb-100">
         <div class="chain-store-image-wrapper">
           <div class="line">
           <div class="oval"></div>
@@ -156,33 +153,110 @@
         </div>
 
         <div class="multi-store-content">
-          <div class="multi-store-container">
-            <ul class="carousel">
-              <li class="items main-pos" id="1">
-                <img src="img/staffs-time-card/staffs-time-card.jpg" />
-              </li>
-              <li class="items right-pos" id="2">
-                <img src="img/product-product-info/product-product-info.jpg"/>
-              </li>
-              <li class="items left-pos" id="3">
-                <img src="img/report-overview-today/report-overview-today.jpg"/>
-              </li>
-            </ul>
-            <span>
+          <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators mt-3">
+              <li data-target="#carouselIndicators" data-slide-to="0" class="carousel-tab active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1" class="carousel-tab"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2" class="carousel-tab"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/staffs-time-card@3x.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/product-product-info@3x.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/report-overview-today@3x.png" alt="Third slide">
+              </div>
+            </div>
+            </a>
+          </div>
+
+          <ul class="custom-carousel">
+            <li class="items main-pos" id="1">
+              <img src="img/staffs-time-card@3x.png" />
+            </li>
+            <li class="items right-pos" id="2">
+              <img src="img/product-product-info@3x.png"/>
+            </li>
+            <li class="items left-pos" id="3">
+              <img src="img/report-overview-today@3x.png"/>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="feature-box right">
+                <img class="mr-3" src="img/icon-idcard.png" />
+                <div class="item-text">
+                  <p class="text-sm bold ">
+                    員工
+                  </p>
+                  <p class="grey text-xs">
+                    人事調動，不同的店家，不同的權限
+                  </p>
+                </div>  
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="feature-box left">
+                <img class="mr-3" src="img/icon-product.png" />
+                <div class="item-text">
+                  <p class="text-sm bold ">
+                    產品
+                  </p>
+                  <p class="grey text-xs">
+                    同一產品在各店差異，店家之間的綜合比較
+                  </p>
+                </div>  
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="feature-box right">
+                <img class="mr-3" src="img/icon-instock.png" />
+                <div class="item-text">
+                  <p class="text-sm bold ">
+                    庫存
+                  </p>
+                  <p class="grey text-xs">
+                    各店庫存查詢，存貨調度記錄
+                  </p>
+                </div>  
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="feature-box left">
+                <img class="mr-3" src="img/icon-data.png" />
+                <div class="item-text">
+                  <p class="text-sm bold ">
+                    資訊
+                  </p>
+                  <p class="grey text-xs">
+                    店家間資訊共享，顧客、行事曆、員工
+                  </p>
+                </div>  
+              </div>
+            </div>
+
+          </div>
+            
+<!--             <span>
               <input type="button" value="Prev" id="prev">
               <input type="button" value="Next" id="next">
-            </span>
-          </div>
+            </span> -->
         </div>
 
         <div class="single-store-content">
           <div class="row">
             <div class="col-md-6 col-xs-12">
-              <img class="single-store-image" src="img/ui-overview/ui-overview.png" />
+              <img class="single-store-image" src="img/ui-overview@3x.png" />
             </div>
             <div class="col-md-6 col-xs-12">
               <div class="ml-5 single-store-info-list mt-50">
-                <img class="mr-4 single-store-icon" src="img/icon-manage-1/icon-manage-1.png" />
+                <img class="mr-4 single-store-icon" src="img/icon-manage-1.png" />
                 <div class="single-store-desc">
                   <p class="text-sm">
                     建議
@@ -194,7 +268,7 @@
               </div>
 
               <div class="ml-5 single-store-info-list mt-50">
-                <img class="mr-4 single-store-icon" src="img/icon-manage-1/icon-manage-1.png" />
+                <img class="mr-4 single-store-icon" src="img/icon-manage-2.png" />
                 <div class="single-store-desc">
                   <p class="text-sm">
                     掌握
@@ -206,7 +280,7 @@
               </div>
 
               <div class="ml-5 single-store-info-list mt-50">
-                <img class="mr-4 single-store-icon" src="img/icon-manage-1/icon-manage-1.png" />
+                <img class="mr-4 single-store-icon" src="img/icon-manage-3.png" />
                 <div class="single-store-desc">
                   <p class="text-sm">
                     緊盯
@@ -223,7 +297,7 @@
       </div>
     </section>
 
-    <section class="reservation">
+    <section class="reservation" id="reservation">
       <div class="container">
         <div>
           <p class="text-lg text-center">預約不只是預約</p>
@@ -234,26 +308,25 @@
         <div class="row mt-50">
           <div class="col-md-6 col-xs-12">
             <div class="text-center">
-              <img class="reservation-image" src="img/ui-reservation1/ui-reservation-1.png" />
+              <img class="reservation-image" src="img/ui-reservation-from-1@3x.png" />
             </div>
           </div>
 
           <div class="col-md-6 col-xs-12">
             <div class="reservation-desc">
               <p class="grey">我們的預約可以給您的顧客帶來更多選擇，<span class="bold black">減低錯誤的發生率</span>，增加<b>增加方便性</b>，更可以提高店家的曝光率。</p>
-              <a href="#">看更多介紹 </a>
             </div>
 
           </div>
         </div>
         <div class="text-center mt-50">
           <p class="blue">服務業進階化：預約時掌握顧客的喜好</p>
-          <img src="img/icon-arrowdown/icon-arrowdown.png"/>
+          <img src="img/icon-arrowdown.png"/>
         </div>
       </div>
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
       <div class="container">
         <div class="service-title-wrapper">
           <p class="text-lg text-center">服務可以更貼近人心</p>
@@ -264,14 +337,13 @@
           <div class="col-md-6 col-xs-12">
             <div class="service-desc">
               <p class="bold">記錄下每一次的服務和喜好，提供給顧客更完善的服務，<span class="grey">讓來過的都成為您忠實的顧客。</span></p>
-              <a href="#">看更多介紹 </a>
             </div>
 
           </div>
 
           <div class="col-md-6 col-xs-12">
             <div class="text-center">
-              <img class="service-image" src="img/ui-service/ui-service.png" />
+              <img class="service-image" src="img/ui-service@3x.png" />
             </div>
           </div>
 
@@ -279,7 +351,68 @@
         </div>
       </div>
     </section>
+    <section class="trial" id="trial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12 mt-3 mb-3">
+            <div class="text-center">
+              <img class="trial-icon" src="img/icon-saving.png"/>
+              <p class="text-sm">
+                免費入會
+              </p>
+              <p class="grey">不花一毛錢</p>
+              <p class="grey">輕鬆經營店務無負擔</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12 mt-3 mb-3">
+            <div class="text-center">
+              <img class="trial-icon" src="img/icon-saving.png"/>
+              <p class="text-sm">
+                功能更新
+              </p>
+              <p class="grey">因應市場開發新功能</p>
+              <p class="grey">終生會員制</p>
+            </div>
+            
+          </div>
+          <div class="col-md-4 col-xs-12 mt-3 mb-3">
+            <div class="text-center">
+              <img class="trial-icon" src="img/icon-saving.png"/>
+              <p class="text-sm">
+                幫助銷售
+              </p>
+              <p class="grey">串連各社群平台</p>
+              <p class="grey">增加網路曝光度</p>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="row mt-50">
+          <div class="col-xs-12 col-md-6">
+            <img class="trial-image" src="img/ipad-screenshot.png">
+          </div>
+          <div class="col-xs-12 col-md-6 mb-3">
 
+            <div class="mail-text">
+              <p class="bold text-md text-center">免費一按! 好店輕鬆管</p>
+              <p class="text-center">即將上市, 現在填寫電子郵件即可享有免費NxtPOS!</p>              
+            </div>
+            <div class="email-box mt-4">
+              <input class="email-input" type="text"/>
+              <button class="email-submit">加入通知名單</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+    <footer>
+      <div class="white">
+        © 2018 NxtPOS All rights reserved. 專人服務，請撥打 +886987654321
+      </div>
+    </footer>
 
 <!--     <section class="mail">
       <div class="row">
@@ -332,7 +465,7 @@
       </div>
     </section> -->
 
-    <footer>
+    <!-- <footer>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-xs-12">
@@ -379,7 +512,7 @@
         </div>
       </div>
     </footer>
-
+ -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
