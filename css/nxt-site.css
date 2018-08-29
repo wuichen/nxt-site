@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  min-width: 400px;
 }
 
 body {
@@ -112,6 +113,7 @@ section h2 {
 }
 
 #mainNav {
+  z-index: 10000;
   border-color: rgba(34, 34, 34, 0.05);
   background-color: white;
   -webkit-transition: all .35s;
@@ -127,6 +129,38 @@ section h2 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
+}
+
+#mainNav .navbar-brand .logo-white-image {
+  display: inline;
+  width: 50px;
+}
+
+@media (max-width: 992px) {
+  #mainNav .navbar-brand .logo-white-image {
+    display: none;
+  }
+}
+
+#mainNav .navbar-brand .logo-black-image {
+  display: none;
+  width: 50px;
+}
+
+@media (max-width: 992px) {
+  #mainNav .navbar-brand .logo-black-image {
+    display: inline;
+  }
+}
+
+#mainNav .navbar-brand .logo-text {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  #mainNav .navbar-brand .logo-text {
+    color: black;
+  }
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -188,6 +222,15 @@ section h2 {
     border-color: rgba(34, 34, 34, 0.1);
     background-color: white;
   }
+  #mainNav.navbar-shrink .logo-text {
+    color: black;
+  }
+  #mainNav.navbar-shrink .logo-white-image {
+    display: none;
+  }
+  #mainNav.navbar-shrink .logo-black-image {
+    display: inline;
+  }
   #mainNav.navbar-shrink .navbar-brand {
     color: #222222;
   }
@@ -216,7 +259,7 @@ header.masthead {
 }
 
 header.masthead .header-content {
-  margin-top: 35%;
+  margin-top: 40%;
   max-width: 500px;
   margin-bottom: 100px;
   margin-left: auto;
@@ -226,6 +269,12 @@ header.masthead .header-content {
 
 header.masthead .header-content h1 {
   font-size: 30px;
+}
+
+@media (max-width: 992px) {
+  header.masthead .header-content {
+    margin-top: 10%;
+  }
 }
 
 header.masthead .device-container {
@@ -326,17 +375,15 @@ footer {
   width: 100%;
 }
 
-.trial .email-box {
-  margin-left: 110px;
-}
-
 .trial .email-box .email-input {
+  width: 50%;
   height: 45px;
   border: none;
   float: left;
 }
 
 .trial .email-box .email-submit {
+  width: 50%;
   padding: 10px 20px;
   color: white;
   background-color: #ffb312;
@@ -355,7 +402,7 @@ footer {
 }
 
 .reservation .reservation-desc {
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .features-chain-store {
@@ -583,12 +630,13 @@ footer {
 .features-chain-store .chain-store-image-wrapper .tab-single-store {
   position: absolute;
   top: -74px;
-  left: 40px;
+  left: 7px;
   width: 155px;
 }
 
 @media (max-width: 600px) {
   .features-chain-store .chain-store-image-wrapper .tab-single-store {
+    left: 40px;
     width: 80px;
   }
 }
@@ -596,7 +644,7 @@ footer {
 .features-chain-store .chain-store-image-wrapper .tab-chain-store {
   position: absolute;
   top: -74px;
-  right: 15px;
+  right: 19px;
   width: 145px;
 }
 

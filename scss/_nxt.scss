@@ -58,16 +58,17 @@
 	}
 
 	.email-box {
-		margin-left: 110px;
 		.email-input {
-		  height: 45px;
-    	border: none;
+			width: 50%;
+		  	height: 45px;
+    		border: none;
 			float: left;
 		}
 		.email-submit {
+			width: 50%;
 			padding: 10px 20px;
 			color: white;
-		  background-color: #ffb312;
+		  	background-color: #ffb312;
 			float: left;
 		}
 	}
@@ -83,7 +84,7 @@
   	width: 100%;
   }
   .reservation-desc {
-  	padding: 30px;
+  	padding: 0 30px 30px 30px;
   }
 	
 }
@@ -302,16 +303,17 @@
 		.tab-single-store {
 		  position: absolute;
 		  top: -74px;
-		  left: 40px;
+		  left: 7px;
 		  width: 155px;
-		  @media (max-width: 600px) {
+		  	@media (max-width: 600px) {
+		  		left: 40px;
 				width: 80px;
 			}
 		}
 		.tab-chain-store {
 		  position: absolute;
 		  top: -74px;
-		  right: 15px;
+		  right: 19px;
 		  width: 145px;
 
 		}
